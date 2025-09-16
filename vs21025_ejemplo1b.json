@@ -1,0 +1,23 @@
+{
+  "fichero": {
+    "ficha": [
+      {
+        "nombre": "Antonio",
+        "apellido": "Barbero",
+        "direccion": "Calle de Los Andes, 45"
+      },
+      {
+        "nombre": "Giovanni",
+        "apellido": "Vásquez",
+        "direccion": "San Salvador",
+        "email": "vs21025@ues.edu.sv",
+        "telefonos": {
+          "telefono": [
+            "2222-3333",
+            "7777-8888"
+          ]
+        }
+      }
+    ]
+  }
+}

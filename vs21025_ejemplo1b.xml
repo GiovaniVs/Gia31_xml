@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet type="text/css" href="./style/css/vs21025-ejemplo1b.css"?>
+<!-- ejemplo1.xml  SUCARNET -->
+<fichero>
+  <ficha id="1" fechaingreso="1/11/2012">
+  <nombre>Antonio</nombre>
+  <apellido>Barbero</apellido>
+  <direccion>Calle de Los Andes, 45</direccion>
+  </ficha>  
+  <ficha>
+    <nombre>Giovanni</nombre>
+    <apellido>Vásquez</apellido>
+    <direccion>San Salvador</direccion>
+    <email>vs21025@ues.edu.sv</email>
+    <telefonos>
+      <telefono tipo="casa">2222-3333</telefono>
+      <telefono tipo="movil">7777-8888</telefono>
+    </telefonos>
+  </ficha>
+</fichero>

@@ -1,0 +1,14 @@
+{
+    "@attributes": {
+        "nombre": "El Salvador"
+    },
+    "departamento": {
+        "@attributes": {
+            "id": "1",
+            "nombre": "San Salvador"
+        },
+        "cabecera": "San Salvador",
+        "habitantes": "1,700,000",
+        "altura": "545 MSNM"
+    }
+}

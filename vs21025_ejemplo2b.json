@@ -1,0 +1,33 @@
+{
+    "@attributes": {
+        "nombre": "El Salvador"
+    },
+    "departamento": [
+        {
+            "@attributes": {
+                "id": "1",
+                "nombre": "San Salvador"
+            },
+            "cabecera": "San Salvador",
+            "habitantes": "1,700,000",
+            "altura": "545 MSNM"
+        },
+        {
+            "@attributes": {
+                "id": "2",
+                "nombre": "Santa Ana"
+            },
+            "cabecera": "Santa Ana",
+            "habitantes": "552,938",
+            "altura": "665 MSNM",
+            "moneda": "dolar",
+            "idiomas": {
+                "idioma": [
+                    "Español",
+                    "Náhuat",
+                    "Inglés"
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,72 @@
+/* Estilo general del documento */
+pais {
+    display: block;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #444;
+    background-color: #f4faff;
+}
+
+/* Mostrar el atributo nombre del país */
+pais::before {
+    content: "País: " attr(nombre);
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #003366;
+    margin-bottom: 8px;
+}
+
+/* Cada departamento como bloque independiente */
+departamento {
+    display: block;
+    border: 1px solid #999;
+    margin: 6px 0;
+    padding: 8px;
+    background-color: #ffffff;
+    border-radius: 6px;
+}
+
+/* Mostrar id y nombre del departamento */
+departamento::before {
+    content: "Departamento " attr(id) ": " attr(nombre);
+    display: block;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 5px;
+    color: #006600;
+}
+
+/* Cabecera del departamento */
+cabecera {
+    display: block;
+    margin-left: 10px;
+    font-weight: bold;
+    color: #444;
+}
+
+/* Habitantes */
+habitantes {
+    display: block;
+    margin-left: 10px;
+    color: #333;
+}
+
+habitantes::before {
+    content: "Habitantes: ";
+    font-weight: bold;
+}
+
+/* Altura */
+altura {
+    display: block;
+    margin-left: 10px;
+    color: #333;
+}
+
+altura::before {
+    content: "Altura: ";
+    font-weight: bold;
+}

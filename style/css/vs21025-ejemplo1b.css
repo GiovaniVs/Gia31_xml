@@ -1,0 +1,67 @@
+/* Estilo general del documento XML */
+fichero {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+    margin: 10px;
+}
+
+/* Cada ficha se ve como un cuadro con borde */
+ficha {
+    display: block;
+    border: 1px solid #666;
+    padding: 8px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+}
+
+/* Destacar los atributos de ficha (id y fechaingreso) */
+ficha::before {
+    content: "Ficha: " attr(id) " | Fecha ingreso: " attr(fechaingreso);
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Etiquetas internas de cada ficha */
+nombre {
+    font-weight: bold;
+    color: #0055aa;
+}
+
+apellido {
+    font-style: italic;
+    color: #0055aa;
+}
+
+direccion {
+    display: block;
+    margin: 3px 0;
+    color: #333;
+}
+
+email {
+    display: block;
+    color: #aa0000;
+}
+
+telefonos {
+    display: block;
+    margin-top: 5px;
+}
+
+telefono {
+    display: block;
+    margin-left: 15px;
+}
+
+/* Diferenciar tipos de teléfono */
+telefono[tipo="casa"]::before {
+    content: "Casa: ";
+    font-weight: bold;
+}
+
+telefono[tipo="movil"]::before {
+    content: "Móvil: ";
+    font-weight: bold;
+}

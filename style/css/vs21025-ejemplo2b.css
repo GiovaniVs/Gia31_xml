@@ -1,0 +1,139 @@
+/* Estilo general */
+pais {
+  display: block;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  font-size: 14px;
+  color: #222;
+  margin: 20px;
+}
+
+/* Mostrar el nombre del país como un título */
+pais::before {
+  content: "🌍 País: " attr(nombre);
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  color: #004488;
+  margin-bottom: 15px;
+  text-decoration: underline;
+}
+
+/* Cada departamento como una tabla */
+departamento {
+  display: table;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  width: 100%;
+  background-color: #fafafa;
+  border: 2px solid #004488;
+}
+
+/* Fila de encabezado del departamento */
+departamento::before {
+  content: "Departamento " attr(id) " — " attr(nombre);
+  display: table-caption;
+  caption-side: top;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 6px;
+  background-color: #004488;
+  color: white;
+  text-align: left;
+}
+
+/* Cabecera, habitantes, altura, moneda como filas */
+cabecera,
+habitantes,
+altura,
+moneda,
+idiomas {
+  display: table-row;
+}
+
+/* Nombre de campo */
+cabecera::before,
+habitantes::before,
+altura::before,
+moneda::before,
+idiomas::before {
+  display: table-cell;
+  font-weight: bold;
+  padding: 6px;
+  border: 1px solid #bbb;
+  background-color: #ddeeff;
+  width: 180px;
+}
+
+/* Valores */
+cabecera,
+habitantes,
+altura,
+moneda,
+idiomas {
+  border: 1px solid #bbb;
+}
+
+cabecera,
+habitantes,
+altura,
+moneda {
+  display: table-row;
+}
+
+cabecera::before { content: "Cabecera"; }
+habitantes::before { content: "Habitantes"; }
+altura::before { content: "Altura"; }
+moneda::before { content: "Moneda"; }
+
+/* Valor en la celda */
+cabecera,
+habitantes,
+altura,
+moneda,
+idiomas {
+  display: table-row;
+}
+
+cabecera,
+habitantes,
+altura,
+moneda,
+idioma {
+  padding: 6px;
+}
+
+cabecera,
+habitantes,
+altura,
+moneda {
+  display: table-cell;
+  padding-left: 12px;
+}
+
+/* Idiomas como subtabla */
+idiomas {
+  display: table-row-group;
+}
+
+idiomas::before {
+  content: "Idiomas";
+}
+
+idioma {
+  display: table-row;
+}
+
+idioma::before {
+  display: table-cell;
+  font-style: italic;
+  padding: 6px;
+  border: 1px solid #ccc;
+  background-color: #eef5ff;
+  content: attr(tipo);
+}
+
+idioma {
+  display: table-cell;
+  padding: 6px;
+  border: 1px solid #ccc;
+}
