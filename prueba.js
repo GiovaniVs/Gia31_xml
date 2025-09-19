@@ -43,4 +43,5 @@ async function get_pokemon(name_pokemon) {
 
 }
 //mi_first_post_api(d)
-get_pokemon("bulbasaur"); 
+get_pokemon("bulbasaur");
+consonle.log("hola mundo"); 
